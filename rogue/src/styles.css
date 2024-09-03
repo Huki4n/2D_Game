@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body, html { height: 100%; }
+body { background-color: #000000; color: #ffffff; }
+h1 { font-family: "Playfair Display"; font-size: 30px; padding: 10px 0px; margin: 0px; }
+.field-box { border: 2px solid #d0d0d0; float: left; }
+.field { position: relative; width: 1000px; height: 600px; display: grid ; grid-template-rows: repeat(24, 1fr); grid-template-columns: repeat(40, 1fr); gap: 0}
+.field .tile { width: 25px; height: 25px; background-size: 100%; background-image: url(images/tile-.png); z-index: 5; }
+.field .tileW { width: 25px; height: 25px; background-size: 100%; background-image: url(images/tile-W.png); }
+.field .tileE {
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    background-image: url(images/tile-E.png);
+    z-index: 10;
+}
+.field .tileP {
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    background-image: url(images/tile-P.png);
+    z-index: 10;
+}
+.field .tileHP { width: 25px; height: 25px; background-size: 100%; background-image: url(images/tile-HP.png); z-index: 9; }
+.field .tileSW { width: 25px; height: 25px; background-size: 100%; background-image: url(images/tile-SW.png); z-index: 9; }
+.field .tileE .health { background-color: #ff0000; z-index: 11; position: absolute; left: 0px; top: 0px; height: 2px; width: 25px}
+.field .tileP .health { background-color: #00ff00; z-index: 11; position: absolute; left: 0px; top: 0px; height: 2px; width: 25px; max-width: 25px}
+.inventory-box { border: 2px solid #d0d0d0; float: left; }
+.inventory { position: relative; width: 800px; height: 32px; }
+.cl { clear: both; display: block; }
